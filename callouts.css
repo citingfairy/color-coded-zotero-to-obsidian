@@ -1,0 +1,46 @@
+/* Yellow */
+.literature-note .callout[data-callout-metadata="#ffd400"],
+                 .callout[data-callout-metadata="yellow"] {
+  --callout-color: 255, 204, 0;
+}
+
+/* Red */
+.literature-note .callout[data-callout-metadata="#ff6666"],
+                 .callout[data-callout-metadata="red"] {
+  --callout-color: 255, 59, 48;
+}
+
+/* Orange */
+.literature-note .callout[data-callout-metadata="#f19837"] ,
+                 .callout[data-callout-metadata="orange"] {
+  --callout-color: 255, 149, 0;
+}
+
+/* Green */
+.literature-note .callout[data-callout-metadata="#5fb236"],
+                 .callout[data-callout-metadata="green"] {
+  --callout-color: 40, 205, 65;
+}
+
+/* Blue */
+.literature-note .callout[data-callout-metadata="#2ea8e5"],
+                 .callout[data-callout-metadata="blue"] {
+  --callout-color: 0, 122, 255;
+}
+
+/* Pink */
+.literature-note .callout[data-callout-metadata="#e56eee"],
+                 .callout[data-callout-metadata="pink"] {
+  --callout-color: 255, 87, 255;
+}
+
+/* Purple */
+.literature-note .callout[data-callout-metadata="#a28ae5"],
+                 .callout[data-callout-metadata="purple"] {
+  --callout-color: 125, 84, 222;
+}
+/* Grey */
+.literature-note .callout[data-callout-metadata="#aaaaaa"],
+                 .callout[data-callout-metadata="grey"] {
+  --callout-color: 170, 170, 170;
+}
