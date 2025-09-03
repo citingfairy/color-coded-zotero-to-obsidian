@@ -64,6 +64,8 @@ The same goes for green annotations, which will be copied once in "Core Quotes" 
 
 The "Excerpts and Comments" section generally collects all highlights and annotations from the Zotero entry in the order they appear in the annotations section of Zotero. The only exception are orange highlights, which will be imported as third-level headings, enabling you to structure your Obsidian note while annotating your PDF file within Zotero. If you mark part of the text in orange, it will thus appear as a heading in Obsidian.
 
+Note: The templates use the `persist` functionality of Zotero Integration. This means that everything between `%% begin annotations %%` and `%% end annotations %%` tags will not be changed when you use the import function again. This is to protect you from unintentionally deleting any changes or additional comments that you might have written in the note after import when importing again. If you do not want this functionality, simply delete the `{% persist "annotations" %}` and `{% endpersist %}` lines in the template.
+
 ## Supported Colors
 
 The template supports all standard Zotero highlight colors:
