@@ -10,10 +10,7 @@ The Zotero Entry Note Advanced template additionally enables you to use function
 
 ## Change notes
 
-- {% assign commits = getDirCommits() %}
-{% for commit in commits %}
-- {{ commit.date | date: "%Y-%m-%d" }} - {{ commit.message }}
-{% endfor %}
+- 2025-10-10: Added functionality to include metadata in the YAML to enable filtering in Obsidian Base or Dataview.
 
 ## Features
 
