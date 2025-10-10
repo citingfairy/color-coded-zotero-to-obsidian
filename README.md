@@ -8,11 +8,19 @@ Obsidian templates are markdown files that can be used to structure and design O
 
 The Zotero Entry Note Advanced template additionally enables you to use functional color coding. Annotations not only show up in their original color, but can be used to pull certain annotations to the top of your Obsidian note and to create subheadings.
 
+## Change notes
+
+- {% assign commits = getDirCommits() %}
+{% for commit in commits %}
+- {{ commit.date | date: "%Y-%m-%d" }} - {{ commit.message }}
+{% endfor %}
+
 ## Features
 
 Both plugins:
 - Maintain Zotero highlight colors in Obsidian
 - Include metadata, citation information, and direct links to the source entry in Zotero.
+- Set metadata as properties (i.e. as metadata in the YAML section)
 
 This is how the metadata part of the Obsidian note will look like after import:
 
