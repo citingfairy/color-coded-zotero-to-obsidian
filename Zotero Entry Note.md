@@ -6,13 +6,13 @@ date-created: "{{exportDate | format('YYYY-MM-DD')}}"
 title: "{{title}}"
 item-type: "{{itemType | capitalize}}"
 signature: {% if archive %}"{{archive}}, {{archiveLocation}}, {{callNumber}}"{% endif %}
-authors: {% for creator in creators | filterby("author") %}
+authors: {% for creator in creators | filterby("creatorType", "contains", "author") %}
   - "{{creator.lastName}}, {{creator.firstName}}"{% endfor %}
 recipient: {% if itemType == "letter" %}"{{recipients}}"{% endif %}
 lit-date-daily: {% if itemType == "newspaperArticle" or "report" or "letter" %}"{{date | format("YYYY-MM-DD")}}"{% endif %}
 lit-date-yearly: "{{date | format("YYYY")}}"
 editors: {% if itemType == "bookSection" %}"{{editors}}"{% endif %}
-book: {% if itemType == "bookSection" %}"{{bookTitle}}"{% endif %}
+edited-book: {% if itemType == "bookSection" %}"{{bookTitle}}"{% endif %}
 journal: {% if itemType == "journalArticle" %}"{{publicationTitle}}"{% endif %}
 DOI: "{{DOI}}"
 annotated: {% if annotations %}"true"{% else %}"false"{% endif %}
