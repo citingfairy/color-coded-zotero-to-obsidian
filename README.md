@@ -10,6 +10,7 @@ The Zotero Entry Note Advanced template additionally enables you to use function
 
 ## Change notes
 
+- 2025-11-12: Fixed author filter in yaml
 - 2025-10-10: Added functionality to include metadata in the YAML to enable filtering in Obsidian Base or Dataview.
 
 ## Features
